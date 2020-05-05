@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/fyne-io/examples/ben"
 	"image/color"
 	"strings"
 
@@ -66,6 +67,7 @@ func main() {
 	apps = append(apps, appInfo{"Fractal", icon.FractalBitmap, true, fractal.Show})
 	apps = append(apps, appInfo{"Life", icon.Life, true, life.Show})
 	apps = append(apps, appInfo{"Solitaire", icon.SolitaireBitmap, true, solitaire.Show})
+	apps = append(apps, appInfo{"Ben", icon.Life, true, ben.Show})
 
 	flags := make(map[string]*bool)
 	for _, launch := range apps {
